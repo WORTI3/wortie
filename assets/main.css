@@ -994,6 +994,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .h-4 {
   height: 1rem;
 }
+.h-\[1000px\] {
+  height: 1000px;
+}
 .min-h-screen {
   min-height: 100vh;
 }
@@ -1020,6 +1023,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .w-4 {
   width: 1rem;
+}
+.w-\[100\%\] {
+  width: 100%;
 }
 .w-\[250px\] {
   width: 250px;
@@ -1163,6 +1169,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-bg-opacity: 1;
   background-color: rgb(34 197 94 / var(--tw-bg-opacity));
 }
+.bg-teal-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(20 184 166 / var(--tw-bg-opacity));
+}
 .bg-blue-200 {
   --tw-bg-opacity: 1;
   background-color: rgb(191 219 254 / var(--tw-bg-opacity));
@@ -1191,9 +1201,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-gradient-from: #F17A7E;
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(241 122 126 / 0));
 }
-.from-slate-600 {
-  --tw-gradient-from: #475569;
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(71 85 105 / 0));
+.from-slate-50 {
+  --tw-gradient-from: #f8fafc;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(248 250 252 / 0));
 }
 .from-green-100 {
   --tw-gradient-from: #dcfce7;
@@ -1206,8 +1216,8 @@ Ensure the default browser behavior of the `hidden` attribute.
 .via-orange {
   --tw-gradient-stops: var(--tw-gradient-from), #F9A66C, var(--tw-gradient-to, rgb(249 166 108 / 0));
 }
-.via-slate-700 {
-  --tw-gradient-stops: var(--tw-gradient-from), #334155, var(--tw-gradient-to, rgb(51 65 85 / 0));
+.via-slate-100 {
+  --tw-gradient-stops: var(--tw-gradient-from), #f1f5f9, var(--tw-gradient-to, rgb(241 245 249 / 0));
 }
 .via-slate-400 {
   --tw-gradient-stops: var(--tw-gradient-from), #94a3b8, var(--tw-gradient-to, rgb(148 163 184 / 0));
@@ -1215,8 +1225,8 @@ Ensure the default browser behavior of the `hidden` attribute.
 .to-peach {
   --tw-gradient-to: #F17A7E;
 }
-.to-slate-800 {
-  --tw-gradient-to: #1e293b;
+.to-slate-50 {
+  --tw-gradient-to: #f8fafc;
 }
 .to-gray-100 {
   --tw-gradient-to: #f3f4f6;
@@ -1330,6 +1340,12 @@ Ensure the default browser behavior of the `hidden` attribute.
 .pt-20 {
   padding-top: 5rem;
 }
+.pt-\[-20px\] {
+  padding-top: -20px;
+}
+.pb-20 {
+  padding-bottom: 5rem;
+}
 .pb-12 {
   padding-bottom: 3rem;
 }
@@ -1430,9 +1446,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .tracking-normal {
   letter-spacing: 0em;
 }
-.text-gray-600 {
+.text-slate-600 {
   --tw-text-opacity: 1;
-  color: rgb(75 85 99 / var(--tw-text-opacity));
+  color: rgb(71 85 105 / var(--tw-text-opacity));
 }
 .text-orange {
   --tw-text-opacity: 1;
@@ -1450,13 +1466,17 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-text-opacity: 1;
   color: rgb(17 24 39 / var(--tw-text-opacity));
 }
+.text-gray-600 {
+  --tw-text-opacity: 1;
+  color: rgb(75 85 99 / var(--tw-text-opacity));
+}
 .text-gray-500 {
   --tw-text-opacity: 1;
   color: rgb(107 114 128 / var(--tw-text-opacity));
 }
-.text-gray-300 {
+.text-slate-900 {
   --tw-text-opacity: 1;
-  color: rgb(209 213 219 / var(--tw-text-opacity));
+  color: rgb(15 23 42 / var(--tw-text-opacity));
 }
 .text-gray-800 {
   --tw-text-opacity: 1;
@@ -1466,21 +1486,13 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-text-opacity: 1;
   color: rgb(29 78 216 / var(--tw-text-opacity));
 }
-.text-slate-900 {
+.text-teal-500 {
   --tw-text-opacity: 1;
-  color: rgb(15 23 42 / var(--tw-text-opacity));
-}
-.text-yellow-500 {
-  --tw-text-opacity: 1;
-  color: rgb(234 179 8 / var(--tw-text-opacity));
+  color: rgb(20 184 166 / var(--tw-text-opacity));
 }
 .text-peach {
   --tw-text-opacity: 1;
   color: rgb(241 122 126 / var(--tw-text-opacity));
-}
-.text-slate-600 {
-  --tw-text-opacity: 1;
-  color: rgb(71 85 105 / var(--tw-text-opacity));
 }
 .text-gray-700 {
   --tw-text-opacity: 1;
@@ -1608,6 +1620,19 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 @media (prefers-color-scheme: dark) {
 
+  .dark\:from-slate-600 {
+    --tw-gradient-from: #475569;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(71 85 105 / 0));
+  }
+
+  .dark\:via-slate-700 {
+    --tw-gradient-stops: var(--tw-gradient-from), #334155, var(--tw-gradient-to, rgb(51 65 85 / 0));
+  }
+
+  .dark\:to-slate-800 {
+    --tw-gradient-to: #1e293b;
+  }
+
   .dark\:text-white {
     --tw-text-opacity: 1;
     color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -1616,6 +1641,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   .dark\:text-gray-400 {
     --tw-text-opacity: 1;
     color: rgb(156 163 175 / var(--tw-text-opacity));
+  }
+
+  .dark\:text-gray-300 {
+    --tw-text-opacity: 1;
+    color: rgb(209 213 219 / var(--tw-text-opacity));
   }
 }
 @media (min-width: 640px) {
