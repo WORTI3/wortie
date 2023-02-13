@@ -994,9 +994,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .h-4 {
   height: 1rem;
 }
-.h-\[1000px\] {
-  height: 1000px;
-}
 .min-h-screen {
   min-height: 100vh;
 }
@@ -1023,9 +1020,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .w-4 {
   width: 1rem;
-}
-.w-\[100\%\] {
-  width: 100%;
 }
 .w-\[250px\] {
   width: 250px;
@@ -1339,12 +1333,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .pt-20 {
   padding-top: 5rem;
-}
-.pt-\[-20px\] {
-  padding-top: -20px;
-}
-.pb-20 {
-  padding-bottom: 5rem;
 }
 .pb-12 {
   padding-bottom: 3rem;
